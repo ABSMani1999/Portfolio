@@ -16,14 +16,51 @@ body{
     .Nav-container{
         display: flex;
         width: fit-content;
-        top: 8rem;
-        left: 3%;
         z-index: 1;
     }
     .Nav-col{
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+    }
+    
+    .Nav-row{
+        font-size: 2rem;
+        padding: 1rem;
+        cursor: pointer;
+        border: none;
+        color: #fff;
+        box-shadow: 1px 1px 15px 1px #000;
+        border-radius: 0.2rem;
+        background-color: #0000;
+    }
+}
+
+@media(min-width:620px){
+    .Nav-container{
+        display: flex;
+        width: fit-content;
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    .Nav-col{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-evenly;
+    }
+    
+    .Nav-row{
+        font-size: 2rem;
+        padding: 1rem;
+        cursor: pointer;
+        border: none;
+        color: #fff;
+        box-shadow: 1px 1px 15px 1px #000;
+        border-radius: 0.2rem;
+        background-color: #0000;
+        width: 7rem;
     }
 }
 
@@ -39,19 +76,20 @@ body{
         display: flex;
         flex-direction: column;
     }
-    
+        
+    .Nav-row{
+        font-size: 2rem;
+        padding: 1rem;
+        cursor: pointer;
+        border: none;
+        color: #fff;
+        box-shadow: 1px 1px 15px 1px #000;
+        border-radius: 0.2rem;
+        background-color: #0000;
+        width: fit-content;
+    }
 }
 
-.Nav-row{
-    font-size: 2rem;
-    padding: 1rem;
-    cursor: pointer;
-    border: none;
-    color: #fff;
-    box-shadow: 1px 1px 15px 1px #000;
-    border-radius: 0.2rem;
-    background-color: #0000;
-}
 
 .Nav-row:hover{
     transition: all 500ms;
@@ -87,6 +125,45 @@ body{
         margin-bottom: 2rem;
         font-size: 1.2rem;
     }
+    .Home-col-1 img{
+        width: 100%;
+        border: 0.2rem solid #5598c4;
+    }
+}
+
+@media(miN-width:620px){
+    .Home-contaner{
+        width: 85%;
+        margin: auto;
+        margin-bottom: 5rem;
+    }
+    .Home-row{
+        display: inline-block;
+    }
+    .Home-col-1{
+        width: 60%;
+        padding-top: 2rem;
+        margin: auto;
+    }
+    .Home-col-2{
+        color: #fff;
+        padding-top: 9rem;
+        width: 100%;
+        margin-top: -8rem;
+    }
+    .Home-col2-row-1 p{
+        font-size: 1.6rem;
+        color: #fff;
+        margin-bottom: 0;
+    }
+    .Home-col2-row-2 p{
+        margin-bottom: 2rem;
+        font-size: 1.2rem;
+    }
+    .Home-col-1 img{
+        width: 100%;
+        border: 0.2rem solid #5598c4;
+    }
 }
 
 @media(min-width:1000px){
@@ -118,13 +195,14 @@ body{
         margin-bottom: 2rem;
         font-size: 1.4rem;
     }
+    .Home-col-1 img{
+        width: 100%;
+        border: 0.2rem solid #5598c4;
+    }
 }
 
 
-.Home-col-1 img{
-    width: 100%;
-    border: 0.2rem solid #5598c4;
-}
+
 
 .typing-effect{
     width: 10ch;
@@ -197,6 +275,40 @@ body{
         cursor: pointer;
         padding:1rem 1rem;
     }
+    .Portfolio-row{
+        position: relative;
+        overflow: hidden;
+    }
+}
+
+@media(min-width:620px){
+    .Portfolio-container{
+        width: 80%;
+        margin: auto;
+        margin-bottom: 5rem;   
+    }
+    .Portfolio-col{
+        display: flex;
+        flex-wrap: wrap;
+    }    
+    .Portfolio-img{
+        width: fit-content;
+        cursor: pointer;
+        padding:0 1rem;
+    }
+    .Portfolio-row{
+        position: relative;
+        overflow: hidden;
+        width: 50%;
+        height: 20vh;
+    }
+    .Portfolio-row:nth-child(3){
+        margin-top: 1rem;
+    }  
+    .Portfolio-content{
+        font-size: 1rem !important;
+        overflow: scroll;
+    }
 }
 
 @media(min-width:1000px){
@@ -213,6 +325,15 @@ body{
         cursor: pointer;
         padding:0 1rem;
     }
+    .Portfolio-row{
+        position: relative;
+        overflow: hidden;
+        width: 33.33%;
+        height: 30vh;
+    }
+    .Portfolio-row:nth-child(3){
+        margin-top: 0rem;
+    }  
 }
 
 .Portfolio-container h1{
@@ -283,7 +404,7 @@ body{
 /* Education */
 @media(min-width:320px){
     .Education-container{
-        width: 90%;
+        width: 100%;
         margin: auto;
         margin-bottom: 5rem;
         display: inline-block;
@@ -291,6 +412,9 @@ body{
     .Contact,.Education{
         width: 90%;
         margin: auto;
+    }
+    .Contact-col li span{
+        padding-left: 2.7rem !important;
     }
 }
 
@@ -306,6 +430,13 @@ body{
     .Contact,.Education{
         margin: auto;
     }
+}
+
+
+.contact-info{
+    background-color: #1e1e1e30;
+    padding: 1rem;
+    margin-top: 3.4rem;
 }
 
 
@@ -329,9 +460,6 @@ body{
         color: #fff;
     }
   
-    .Contact-col li span{
-        padding-left: 6rem !important;
-    }
     .Contact-col ul li{
         display: flex;
         padding: 1rem;
@@ -392,5 +520,5 @@ body{
 }
 
 .bg-color{
-    background-color: midnightblue;
+    background-color: #1e1e1e30;
 }
