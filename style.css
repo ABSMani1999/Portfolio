@@ -452,6 +452,7 @@ body{
     .Contact-container{
         width: 100%;
         margin: auto;
+        text-align: center;
     }
     
     .Contact-col{
@@ -466,16 +467,21 @@ body{
     }
     .Contact-col ul{
         list-style-type: none;
-        font-size: 1.5rem; 
+        font-size: 1rem; 
+        display: inline-block;
+    }
+    
+    .Contact-list{    
         display: inline-block;
     }
 }
 
 @media(min-width:1000px){
     .Contact-container{
-        width: 80%;
+        width: 90%;
         margin: auto;
         margin-top: 9rem;
+        text-align: center;
     }
     
     .Contact-col{
@@ -487,6 +493,11 @@ body{
         list-style-type: none;
         font-size: 1.5rem; 
         display: flex;
+    }
+    
+    .Contact-list{    
+        display: flex;
+        justify-content: space-evenly
     }
 }
 
